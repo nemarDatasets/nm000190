@@ -1,0 +1,42 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "Brain Products",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 250.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "analog bandpass filter, lowpass filter, downsampling, artifact rejection"
+		}
+	},
+	"RecordingDuration": 4134.196,
+	"RecordingType": "continuous",
+	"EEGReference": "nose",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "10-20 system",
+	"EEGChannelCount": 63,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "Brain Products",
+	"SoftwareVersions": "Matlab",
+	"CapManufacturer": "EasyCap GmbH",
+	"CapManufacturersModelName": "Fast'n Easy Cap",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 0.1,
+			"high_cutoff_hz": 250.0,
+			"Type": "analog bandpass then digital lowpass"
+		}
+	},
+	"TaskDescription": "[auditory ERP speller] Nine-class auditory ERP paradigm with predictive text entry system (PASS2D). Users focus attention on two-dimensional auditory stimuli varying in pitch (high/medium/low) and direction (left/middle/right) presented via headphones. ISI: 125.0ms, SOA: 225.0ms, stimulus frequencies: [708.0, 524.0, 380.0] Hz.",
+	"Instructions": "Focus on target stimuli while ignoring all non-target stimuli. Minimize eye movements and muscle artifacts. Count targets during calibration. Spell sentences during online phase.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Berlin Institute of Technology",
+	"InstitutionAddress": "Franklinstr. 28/19, 10587 Berlin, Germany",
+	"InstitutionalDepartmentName": "Machine Learning Laboratory",
+	"SubjectArtefactDescription": "n/a",
+	"DeviceSerialNumber": "n/a",
+	"Description": "A novel 9-class auditory ERP paradigm driving a predictive text entry system",
+	"MISCChannelCount": 0
+}

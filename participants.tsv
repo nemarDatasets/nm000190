@@ -1,0 +1,11 @@
+participant_id	age	sex	hand	weight	height	group	species	bci_experience
+sub-1	26	M	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-10	25	M	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-2	21	M	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-3	25	n/a	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-4	23	n/a	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-5	34	M	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-6	23	M	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-7	23	M	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-8	24	M	n/a	n/a	n/a	Healthy	human	mostly naive
+sub-9	24	M	n/a	n/a	n/a	Healthy	human	mostly naive
