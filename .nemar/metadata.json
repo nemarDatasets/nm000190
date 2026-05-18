@@ -1,0 +1,83 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Johannes Höhne": {},
+    "Martijn Schreuder": {},
+    "Benjamin Blankertz": {},
+    "Michael Tangermann": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.3389/fnins.2011.00099",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.3389/fnins.2011.00112",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000190",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000190",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "BNCI 2015-012 PASS2D P300 dataset",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "2.3 GB (21 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises a 9-class auditory event-related potential (ERP) paradigm designed for brain-computer interface (BCI) applications, specifically a predictive text entry system called PASS2D. Ten healthy participants performed a single session including calibration and online spelling tasks using two-dimensional auditory stimuli varying in pitch and spatial direction. The dataset includes 63-channel EEG recordings preprocessed with bandpass filtering, downsampling to 100 Hz, and artifact rejection, achieving an average spelling speed of 0.8 characters per minute.",
+  "methods_description": "Data were acquired at 250 Hz from 63 EEG channels using wet Ag/AgCl electrodes in a 10-20 montage (Brain Products hardware). Auditory stimuli (708, 524, 380 Hz tones) were presented via headphones with 125 ms inter-stimulus interval. Preprocessing included 0.1-250 Hz analog bandpass filtering followed by 40 Hz digital lowpass filtering, downsampling to 100 Hz, and artifact rejection (threshold: 100 μV peak-to-peak). Classification used Fisher discriminant analysis with shrinkage regularization on mean amplitudes from N200 (230-300 ms) and P300 (350+ ms) intervals.",
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "auditory ERP"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "speller paradigm"
+    },
+    {
+      "term": "spatial auditory stimuli"
+    }
+  ],
+  "source_hash": "5071685aaa125d59ca1ef715e250e00d3a8a0c3449af60f640bd7e01e9118873"
+}
