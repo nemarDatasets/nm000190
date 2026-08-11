@@ -1,0 +1,65 @@
+{
+ "dataset": "nm000190",
+ "moabb_class": "BNCI2015_012",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.BNCI2015_012.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-bnci-data/bbci/BNCIHorizon2020-PASS2D",
+ "license": "CC-BY-NC-ND-4.0",
+ "doi": "10.3389/fnins.2011.00099",
+ "naming": "upstream_filenames_restored",
+ "n_files": 10,
+ "total_bytes": 5862967608,
+ "files": [
+  {
+   "file": "PASS2D_VPja.mat",
+   "bytes": 526199662,
+   "sha256": "7104c7145f7e2ad7b48c789d170777e2a9cc55ff9738df98a69cba68d141a571"
+  },
+  {
+   "file": "PASS2D_VPnv.mat",
+   "bytes": 332683092,
+   "sha256": "dc6e8550fea775b82f66058b447e039ebd4eca428be92ec09713fcc78d67d939"
+  },
+  {
+   "file": "PASS2D_VPnw.mat",
+   "bytes": 670682385,
+   "sha256": "4a8f23101645fcfdb637a325c6f04ba4f9abbd341c657e75feb92bc8336a465f"
+  },
+  {
+   "file": "PASS2D_VPny.mat",
+   "bytes": 513536059,
+   "sha256": "8ce61ea8349838f21120d945b460a34cdd8e343d756d99b97c4199cfdd35c399"
+  },
+  {
+   "file": "PASS2D_VPnz.mat",
+   "bytes": 845954151,
+   "sha256": "8205d32ee92632e79153cbc3ec8d4990c7b53b3b31c6a4e74ba46e9614c089a3"
+  },
+  {
+   "file": "PASS2D_VPoa.mat",
+   "bytes": 616105806,
+   "sha256": "c024d611fb886ce9754f8b44be8882e7f4092119fe596213739e1b41ed84112b"
+  },
+  {
+   "file": "PASS2D_VPob.mat",
+   "bytes": 540290530,
+   "sha256": "b2cd6799bb0113c0fec0b411969a6d74f86fdb276fb93847d0a8a96728c1d4e7"
+  },
+  {
+   "file": "PASS2D_VPoc.mat",
+   "bytes": 741222300,
+   "sha256": "5f295400da33679986970e0e7f029b670635892efc6623024f5c7a1fa37c74bb"
+  },
+  {
+   "file": "PASS2D_VPod.mat",
+   "bytes": 637390505,
+   "sha256": "e64f8d4a73ff9fad123476ebf9242b86b5848dba210d065f5992af1f9246fe57"
+  },
+  {
+   "file": "PASS2D_VPoe.mat",
+   "bytes": 438903118,
+   "sha256": "444fbda1a3ba7b0a1d4a029d44f0de3b863af349ef75ffe11eb8d83a313241cf"
+  }
+ ]
+}
