@@ -1,55 +1,17 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "BNCI 2015-012 PASS2D P300 dataset",
+  "description": "This dataset comprises a 9-class auditory event-related potential (ERP) paradigm designed for brain-computer interface (BCI) applications, specifically a predictive text entry system called PASS2D. Ten healthy participants performed a single session including calibration and online spelling tasks using two-dimensional auditory stimuli varying in pitch and spatial direction. The dataset includes preprocessed EEG recordings from 63 channels sampled at 250 Hz, with performance metrics averaging 0.8 characters per minute and 3.4 bits/min information transfer rate.",
+  "methods_description": "Participants completed a single 3-4 hour session consisting of calibration (3 runs of 9 trials each with 13-14 pseudo-random stimulus sequences) and online spelling phases (2 runs). EEG was recorded from 63 wet Ag/AgCl electrodes in 10-20 montage at 250 Hz sampling rate using Brain Products hardware. Data were preprocessed with 0.1-250 Hz analog bandpass filtering followed by 40 Hz digital lowpass filtering, downsampled to 100 Hz, and artifact-rejected using threshold rejection (100 μV peak-to-peak). Classification employed linear Fisher discriminant analysis with shrinkage regularization on mean amplitudes from discriminative intervals (N200: 230-300 ms, P300: 350+ ms).",
+  "license": "CC-BY-NC-ND-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Johannes Höhne": {},
     "Martijn Schreuder": {},
     "Benjamin Blankertz": {},
     "Michael Tangermann": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.3389/fnins.2011.00099",
-      "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
-    },
-    {
-      "identifier": "10.3389/fnins.2011.00112",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/nm000190",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000190",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "title": "BNCI 2015-012 PASS2D P300 dataset",
-  "license": "CC-BY-NC-ND-4.0",
-  "dataset_type": "derivative",
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "2.3 GB (21 files)"
-  ],
-  "formats": [
-    ".bdf",
-    ".json",
-    ".md",
-    ".tsv",
-    ".yaml",
-    ".yml"
-  ],
-  "description": "This dataset comprises a 9-class auditory event-related potential (ERP) paradigm designed for brain-computer interface (BCI) applications, specifically a predictive text entry system called PASS2D. Ten healthy participants performed a single session including calibration and online spelling tasks using two-dimensional auditory stimuli varying in pitch and spatial direction. The dataset includes 63-channel EEG recordings preprocessed with bandpass filtering, downsampling to 100 Hz, and artifact rejection, achieving an average spelling speed of 0.8 characters per minute.",
-  "methods_description": "Data were acquired at 250 Hz from 63 EEG channels using wet Ag/AgCl electrodes in a 10-20 montage (Brain Products hardware). Auditory stimuli (708, 524, 380 Hz tones) were presented via headphones with 125 ms inter-stimulus interval. Preprocessing included 0.1-250 Hz analog bandpass filtering followed by 40 Hz digital lowpass filtering, downsampling to 100 Hz, and artifact rejection (threshold: 100 μV peak-to-peak). Classification used Fisher discriminant analysis with shrinkage regularization on mean amplitudes from N200 (230-300 ms) and P300 (350+ ms) intervals.",
   "keywords": [
     {
       "term": "Brain-Computer Interfaces",
@@ -76,8 +38,47 @@
       "term": "speller paradigm"
     },
     {
-      "term": "spatial auditory stimuli"
+      "term": "attention"
     }
   ],
-  "source_hash": "5071685aaa125d59ca1ef715e250e00d3a8a0c3449af60f640bd7e01e9118873"
+  "related_identifiers": [
+    {
+      "identifier": "10.3389/fnins.2011.00099",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.3389/fnins.2011.00112",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000190",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000190",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "8.2 GB (31 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "source_hash": "5e2a4b9f39d822dcd9c63249b4ff4127a6cc77dc1c3847ebc931858f6560881e"
 }
