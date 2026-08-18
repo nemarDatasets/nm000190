@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-012 PASS2D P300 dataset",
-  "description": "This dataset comprises a 9-class auditory event-related potential (ERP) paradigm designed for brain-computer interface (BCI) applications, specifically a predictive text entry system called PASS2D. Ten healthy participants performed a single session including calibration and online spelling tasks using two-dimensional auditory stimuli varying in pitch and spatial direction. The dataset includes preprocessed EEG recordings from 63 channels sampled at 250 Hz, with performance metrics averaging 0.8 characters per minute and 3.4 bits/min information transfer rate.",
-  "methods_description": "Participants completed a single 3-4 hour session consisting of calibration (3 runs of 9 trials each with 13-14 pseudo-random stimulus sequences) and online spelling phases (2 runs). EEG was recorded from 63 wet Ag/AgCl electrodes in 10-20 montage at 250 Hz sampling rate using Brain Products hardware. Data were preprocessed with 0.1-250 Hz analog bandpass filtering followed by 40 Hz digital lowpass filtering, downsampled to 100 Hz, and artifact-rejected using threshold rejection (100 μV peak-to-peak). Classification employed linear Fisher discriminant analysis with shrinkage regularization on mean amplitudes from discriminative intervals (N200: 230-300 ms, P300: 350+ ms).",
+  "description": "This dataset comprises preprocessed EEG recordings from a novel 9-class auditory event-related potential (ERP) paradigm designed for brain-computer interface (BCI) applications. Ten healthy participants performed a spelling task using a predictive text entry system (PASS2D) that exploited spatial auditory stimuli varying in pitch and direction. The dataset includes 63-channel EEG data sampled at 250 Hz with P300 and N200 components, along with performance metrics demonstrating competitive spelling speeds of 0.8 characters per minute.",
+  "methods_description": "Data were acquired from 10 healthy participants in a single session consisting of a calibration phase (3 runs with 9 trials each) and an online spelling phase (2 runs). EEG was recorded from 63 electrodes using wet Ag/AgCl electrodes in a 10-20 montage at 250 Hz sampling rate with nose reference. Auditory stimuli (708, 524, 380 Hz tones) were presented via headphones in a 9-class paradigm varying in pitch and spatial direction. Preprocessing included analog bandpass filtering (0.1-250 Hz), digital lowpass filtering (40 Hz), downsampling to 100 Hz, and artifact rejection (peak-to-peak voltage >100 μV). Classification used linear Fisher discriminant analysis with shrinkage regularization on mean amplitudes from discriminative intervals (N200: 230-300 ms, P300: 350+ ms).",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,6 +20,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
+      "term": "EEG"
+    },
+    {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
@@ -29,16 +32,13 @@
       "term": "P300"
     },
     {
-      "term": "auditory ERP"
+      "term": "auditory paradigm"
     },
     {
-      "term": "EEG"
+      "term": "speller"
     },
     {
-      "term": "speller paradigm"
-    },
-    {
-      "term": "attention"
+      "term": "BCI communication"
     }
   ],
   "related_identifiers": [
@@ -80,5 +80,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "5e2a4b9f39d822dcd9c63249b4ff4127a6cc77dc1c3847ebc931858f6560881e"
+  "source_hash": "dab8604a5c0e04d9220cfa9d2448303bd7ab5b231ab6481957909ade4fd207ee"
 }
