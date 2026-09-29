@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-012 PASS2D P300 dataset",
-  "description": "This dataset comprises preprocessed EEG recordings from a novel 9-class auditory event-related potential (ERP) paradigm designed for brain-computer interface (BCI) applications. Ten healthy participants performed a spelling task using a predictive text entry system (PASS2D) that exploited spatial auditory stimuli varying in pitch and direction. The dataset includes 63-channel EEG data sampled at 250 Hz with P300 and N200 components, along with performance metrics demonstrating competitive spelling speeds of 0.8 characters per minute.",
-  "methods_description": "Data were acquired from 10 healthy participants in a single session consisting of a calibration phase (3 runs with 9 trials each) and an online spelling phase (2 runs). EEG was recorded from 63 electrodes using wet Ag/AgCl electrodes in a 10-20 montage at 250 Hz sampling rate with nose reference. Auditory stimuli (708, 524, 380 Hz tones) were presented via headphones in a 9-class paradigm varying in pitch and spatial direction. Preprocessing included analog bandpass filtering (0.1-250 Hz), digital lowpass filtering (40 Hz), downsampling to 100 Hz, and artifact rejection (peak-to-peak voltage >100 μV). Classification used linear Fisher discriminant analysis with shrinkage regularization on mean amplitudes from discriminative intervals (N200: 230-300 ms, P300: 350+ ms).",
+  "description": "EEG recordings from 10 mostly BCI-naive participants using PASS2D, a nine-class auditory ERP speller. Users attended to two-dimensional auditory stimuli varying in pitch and direction, presented via headphones, to drive a predictive (T9-style) text entry system. Data comprise calibration and online spelling runs recorded with 63 EEG channels, plus one EOG channel. The dataset supports P300/N200 classification and auditory BCI research.",
+  "methods_description": "Single 3-4 hour session per participant with a calibration phase (3 runs of 9 trials, each with pseudo-random sequences of 9 auditory stimuli) and an online spelling phase (2 runs spelling German sentences). EEG was recorded at 250 Hz with 63 wet Ag/AgCl electrodes (Brain Products, nose reference), then filtered and downsampled to 100 Hz. Classification used shrinkage-regularized Fisher discriminant analysis on amplitudes from discriminative N200 and P300 intervals.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -14,31 +14,25 @@
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "brain-computer interface"
     },
     {
       "term": "P300"
     },
     {
-      "term": "auditory paradigm"
+      "term": "auditory event-related potentials"
+    },
+    {
+      "term": "N200"
+    },
+    {
+      "term": "spatial auditory stimuli"
     },
     {
       "term": "speller"
-    },
-    {
-      "term": "BCI communication"
     }
   ],
   "related_identifiers": [
@@ -61,6 +55,16 @@
       "identifier": "https://nemar.org/dataset/nm000190",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "resource_type_general": "Dataset",
@@ -69,7 +73,7 @@
     "eeg"
   ],
   "sizes": [
-    "8.2 GB (31 files)"
+    "7.62 GB (31 files)"
   ],
   "formats": [
     ".bdf",
