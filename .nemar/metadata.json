@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-012 PASS2D P300 dataset",
-  "description": "EEG recordings from 10 mostly BCI-naive participants using PASS2D, a nine-class auditory ERP speller. Users attended to two-dimensional auditory stimuli varying in pitch and direction, presented via headphones, to drive a predictive (T9-style) text entry system. Data comprise calibration and online spelling runs recorded with 63 EEG channels, plus one EOG channel. The dataset supports P300/N200 classification and auditory BCI research.",
-  "methods_description": "Single 3-4 hour session per participant with a calibration phase (3 runs of 9 trials, each with pseudo-random sequences of 9 auditory stimuli) and an online spelling phase (2 runs spelling German sentences). EEG was recorded at 250 Hz with 63 wet Ag/AgCl electrodes (Brain Products, nose reference), then filtered and downsampled to 100 Hz. Classification used shrinkage-regularized Fisher discriminant analysis on amplitudes from discriminative N200 and P300 intervals.",
+  "description": "EEG recordings from 10 mostly BCI-naive healthy participants using PASS2D, a nine-class auditory ERP speller. Users attended to two-dimensional auditory stimuli varying in pitch (high/medium/low) and direction (left/middle/right) presented via headphones, and the resulting nine control signals drove a predictive T9-style text entry system. Each session had a calibration phase followed by online spelling of German sentences. Original-study users spelled about 0.8 characters per minute (3.4 bits/min).",
+  "methods_description": "63-channel wet Ag/AgCl EEG (Brain Products, EasyCap, nose reference) was recorded at 250 Hz and downsampled to 100 Hz. Each single session lasted 3-4 hours. Calibration consisted of 3 runs of 9 trials, followed by 2 online spelling runs. Classification used shrinkage-regularized linear Fisher discriminant analysis on amplitudes from N200 and P300 intervals. Epochs with peak-to-peak amplitude above 100 μV were rejected during calibration.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -17,7 +17,9 @@
       "term": "EEG"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "P300"
@@ -26,13 +28,13 @@
       "term": "auditory event-related potentials"
     },
     {
-      "term": "N200"
-    },
-    {
       "term": "spatial auditory stimuli"
     },
     {
       "term": "speller"
+    },
+    {
+      "term": "predictive text entry"
     }
   ],
   "related_identifiers": [
@@ -84,5 +86,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "dab8604a5c0e04d9220cfa9d2448303bd7ab5b231ab6481957909ade4fd207ee"
+  "source_hash": "5ca98be1aade25316c5ee756d54b8fbcaa717f786fb021e2efa1f21ac46b094b"
 }
